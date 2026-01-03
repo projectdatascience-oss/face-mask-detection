@@ -1,0 +1,113 @@
+# Face Mask Detection Dataset
+
+## Sumber Dataset
+- **Platform**: Kaggle
+- **URL**: https://www.kaggle.com/datasets/omkargurav/face-mask-dataset
+- **Nama Dataset**: Face Mask Detection Dataset
+- **Pemilik**: Omkar Gurav
+
+## Statistik Dataset
+- **Total Gambar**: 7,553 gambar
+- **Data Training (80%)**: 6,043 gambar
+- **Data Testing (20%)**: 1,510 gambar
+
+## Kelas
+1. **with_mask** - Gambar orang yang menggunakan masker
+2. **without_mask** - Gambar orang yang tidak menggunakan masker
+
+## Karakteristik
+- Dataset relatif seimbang antara kedua kelas
+- Variasi gambar mencakup:
+  * Berbagai sudut pengambilan
+  * Berbagai kondisi pencahayaan
+  * Berbagai jenis masker
+  * Berbagai latar belakang
+  * Berbagai usia dan etnis
+
+## Cara Download
+
+### Metode 1: Kaggle API (Recommended)
+```bash
+# Install Kaggle API
+pip install kaggle
+
+# Setup credentials
+# 1. Login ke Kaggle.com
+# 2. Pergi ke Account Settings (https://www.kaggle.com/settings)
+# 3. Scroll ke API section
+# 4. Klik "Create New API Token"
+# 5. File kaggle.json akan terdownload
+# 6. Pindahkan ke:
+#    - Linux/Mac: ~/.kaggle/kaggle.json
+#    - Windows: C:\Users\<username>\.kaggle\kaggle.json
+# 7. Set permission (Linux/Mac): chmod 600 ~/.kaggle/kaggle.json
+
+# Download dataset
+kaggle datasets download -d omkargurav/face-mask-dataset
+
+# Extract
+unzip face-mask-dataset.zip -d data/
+```
+
+### Metode 2: Download Manual
+1. Kunjungi: https://www.kaggle.com/datasets/omkargurav/face-mask-dataset
+2. Klik tombol "Download"
+3. Extract file ZIP ke folder `data/`
+4. Pastikan struktur folder:
+   ```
+   data/
+   ├── train/
+   │   ├── with_mask/
+   │   └── without_mask/
+   └── test/
+       ├── with_mask/
+       └── without_mask/
+   ```
+
+## Struktur Folder yang Diharapkan
+```
+data/
+├── train/
+│   ├── with_mask/          # 3,220 gambar (contoh)
+│   │   ├── image_0001.jpg
+│   │   ├── image_0002.jpg
+│   │   └── ...
+│   └── without_mask/       # 2,823 gambar (contoh)
+│       ├── image_0001.jpg
+│       ├── image_0002.jpg
+│       └── ...
+└── test/
+    ├── with_mask/          # 805 gambar (contoh)
+    │   ├── image_0001.jpg
+    │   └── ...
+    └── without_mask/       # 705 gambar (contoh)
+        ├── image_0001.jpg
+        └── ...
+```
+
+## Preprocessing yang Diterapkan
+- Resize gambar ke 224x224 pixels (untuk MobileNetV2 dan VGG16)
+- Resize gambar ke 128x128 pixels (untuk Custom CNN)
+- Normalisasi pixel values ke range [0, 1]
+- Data augmentation untuk training:
+  * Random rotation
+  * Random flip
+  * Random zoom
+  * Random brightness
+
+## Lisensi Dataset
+Silakan cek lisensi di halaman Kaggle dataset untuk penggunaan komersial atau akademis.
+
+## Citation
+Jika menggunakan dataset ini, mohon untuk memberikan credit kepada pembuat dataset:
+```
+Omkar Gurav. (2020). Face Mask Detection Dataset. 
+Retrieved from https://www.kaggle.com/datasets/omkargurav/face-mask-dataset
+```
+
+## Catatan
+⚠️ **PENTING**: 
+- Folder `data/train/` dan `data/test/` sudah masuk dalam `.gitignore`
+- Dataset TIDAK di-upload ke GitHub karena ukurannya besar
+- Setiap pengguna harus download sendiri menggunakan Kaggle API
+- Total ukuran dataset: ~300-500 MB (approximate)

@@ -1,0 +1,44 @@
+# Deep Learning Framework
+tensorflow==2.13.0
+keras==2.13.1
+
+# Computer Vision
+opencv-python==4.8.1.78
+opencv-contrib-python==4.8.1.78
+
+# Data Processing & Analysis
+numpy==1.24.3
+pandas==2.0.3
+
+# Visualization
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Image Processing
+Pillow==10.0.0
+
+# Model Evaluation & Utilities
+scikit-learn==1.3.0
+
+# Progress Bar
+tqdm==4.66.1
+
+# Kaggle API (untuk download dataset)
+kaggle==1.5.16
+
+# Jupyter Notebook (opsional, untuk explorasi)
+jupyter==1.0.0
+notebook==7.0.2
+ipykernel==6.25.1
+
+# Pre-trained Models (Transfer Learning)
+# MobileNetV2 dan VGG16 sudah include di TensorFlow/Keras
+
+# Additional utilities
+requests==2.31.0
+
+# Untuk reproducibility
+python-dotenv==1.0.0
+
+# Model Saving & Loading
+h5py==3.9.0
