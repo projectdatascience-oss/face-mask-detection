@@ -225,7 +225,7 @@ Confidence: 98.45%
 
 ## 📄 Dokumentasi Lengkap
 Untuk penjelasan detail tentang metodologi, analisis hasil, confusion matrix, dan kesimpulan penelitian, silakan lihat:
-- [Makalah Lengkap (PDF)](docs/Analisis-Perbandingan-Model-Deep-Learning-untuk-Deteksi-Masker-Wajah.pdf)
+- [Makalah Lengkap (PDF)](docs/ANALISIS%20KOMPARATIF%20ARSITEKTUR%20DEEP%20LEARNING%20UNTUK%20KLASIFIKASI%20CITRA%20MASKER%20WAJAH.pdf)
 
 ## 🎓 Kesimpulan
 **MobileNetV2** adalah model terbaik untuk tugas deteksi masker wajah berdasarkan:
